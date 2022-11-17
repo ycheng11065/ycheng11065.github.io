@@ -13,11 +13,9 @@
 
 
 body {
-    
+    background: #EFEFEF;
+    color: grey;
+    font-weight: 500;
 }
 
 
-h1 {
-    background-color: blue;
-
-}
