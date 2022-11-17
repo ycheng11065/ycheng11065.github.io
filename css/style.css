@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
 }
 
 @media (min-width: 800px) {  
@@ -15,7 +17,27 @@
 body {
     background: #EFEFEF;
     color: grey;
-    font-weight: 500;
+    font-weight: 600;
 }
 
+nav {
+    /* text-align: center; */
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px 0;
+}
+
+nav li {
+    padding-left: 50px;
+    display: inline-block;
+}
+
+.social-list li{
+    display: block;
+    padding: 1px 0;
+}
+
+.intro {
+    max-width: 100px;
+}
 
