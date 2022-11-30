@@ -50,9 +50,25 @@ body {
     width: 300px;
 }
 
-
-
-
 #intro {
     flex-basis: 600px;
+}
+
+.projects {
+    height: 700px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / 20% 1fr 1fr;  
+    grid-template-areas: 
+    "list img img"
+    "list img img"
+    "list img img";
+}
+
+.project-list {
+    grid-area: list;
+    list-style: none;
+}
+
+.image-container {
+    grid-area: img;
 }
