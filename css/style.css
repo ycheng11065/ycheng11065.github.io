@@ -10,14 +10,21 @@
     /* Beige  #FFFFF1 */
     /* Dark Grey #1D1F20 */
     /* Pale Blue#7CB7DE */
-    /* Borwn #341A04 */
+    /* Brown #341A04 */
     
     /* LightMode */
     --bg-color-1:#FFFFFF;
     --text-color-1: #7CB7DE;
     --bg-secondary-color-1: #FFFFFF;
+    
+    --text-color-hover: #FFFFF1;
+
+    /* DarkMode */
+    --bg-color-2:#000000;
+    --bg-secondary-color-2: #000000;
 
     --text-weight: 600;
+    --text-size: 20px;
 }
 
 
@@ -27,6 +34,7 @@ body {
     background: var(--bg-color-1);
     color: var(--text-color-1);
     font-weight: var(--text-weight);
+    font-size: var(--text-size);
 }
 
 .logo {
@@ -40,27 +48,45 @@ body {
 
 .nav-list {
     background-color: var(--bg-secondary-color-1);
-
     /* border: 2px solid blue; */
     top: 30px;
     height: 240px;
     /* padding-top: 20px; */
-    margin-bottom: 40px;
+    margin-bottom: 110px;
     position: relative;
     display: flex;
     justify-content: space-around;
     gap: 21px;
 }
 
-.nav-list li {
-    
+.nav-list .upper {
     /* border: 2px solid green; */
-    border-top: 5px solid var(--text-color-1);
+    border-top: 10px solid var(--text-color-1);
     padding-top: 30px;
-    /* background-color: black; */
     list-style: none;
     width: 300px;
 }
+
+.nav-list .obj:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.social-lower li{
+    padding-bottom: 15px;
+    list-style: none;
+}
+
+.social-lower li:hover{
+    color: orange;
+    cursor: pointer;
+}
+
+#intro {
+    line-height: 25px;
+}
+
+
 
 #intro {
     flex-basis: 633px;
@@ -70,6 +96,8 @@ body {
 #intro p {
     word-wrap: break-word
 }
+
+/* Project Section */
 
 .projects {
     background-color: var(--bg-secondary-color-1);
@@ -88,7 +116,7 @@ body {
     /* border: 2px solid green; */
     background-color: var(--bg-secondary-color-1);
     padding-top: 30px;
-    border-top: 5px solid var(--text-color-1);
+    border-top: 10px solid var(--text-color-1);
     grid-area: list;
     list-style: none;
 }
@@ -106,7 +134,7 @@ body {
 .image-containers {
     /* border: 2px solid green; */
 
-    border-top: 5px solid var(--text-color-1);
+    border-top: 10px solid var(--text-color-1);
     padding-top: 30px;
     grid-area: im;
     display: grid;
